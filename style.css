@@ -1,0 +1,14 @@
+h1 {
+    color: red;
+}
+
+#headerNavigation {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+}
+
+#banner {
+    background-color: blue;
+    height: 500px;
+}

@@ -3,41 +3,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- mark as header -->
-    <header>
-        <section id="headerNavigation">
-            <a href="#">Logo</a>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Our Profile</a>
-                <a href="#">Achievement</a>
-                <a href="#">Message</a>
-            </nav>
-        </section>
-    </header>
+    <nav>
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="#facilitation">Facilitation</a></li>
+          <li><a href="#message">Message</a></li>
+        </ul>
+    </nav>
 
     <!-- content section -->
     <main>
-        <div id="banner">
-            <h1>haiii</h1>
+        <div class="banner">
+            <h1>Hi <span id="name"></span>, Welcome To Website</h1>
+            <button id="changeName">Whats Your Name</button>
         </div>
+    
+        <!-- <div class="content">
+            <h2>Artikel Terbaru</h2>
+            <p>Ini adalah contoh artikel terbaru di website kami.</p>
+        </div> -->
+        <section class="facilitation">
+            <h2>Our Facilitation</h2>
+            <div class="facilitator">
+              <div class="facilitator-item">
+                <img src="./assets/guru.jpg" alt="Facility 1">
+                <p>Proffesional Teacher</p>
+              </div>
+              <div class="facilitator-item">
+                <img src="./assets/lapangan.jpg" alt="Facility 2">
+                <p>Sport Field</p>
+              </div>
+              <div class="facilitator-item">
+                <img src="./assets/classroom.jpg" alt="Facility 2">
+                <p>Classroom</p>
+              </div>
+              <!-- Tambahkan lebih banyak gambar dan caption di sini -->
+            </div>
+        </section>
 
-        <div>
-            <h1>Our Facilities</h1>
-            <p>Description 1</p>
-            <p>Description 2</p>
-            <p>Description 3</p>
-        </div>
+        <section class="message">
+          <h2>Message Us</h2>
+          <div class="form-container">
+            <form id="messageForm">
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="birthdate">Tempat Tanggal Lahir:</label>
+              <input type="date" id="birthdate" name="birthdate" required>
+      
+              <label for="gender">Jenis Kelamin:</label>
+              <select id="gender" name="gender" required>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+      
+              <label for="message">Pesan:</label>
+              <textarea id="message" name="message" required></textarea>
+      
+              <button type="submit">Kirim</button>
+            </form>
+            <div class="output-container">
+              <h3>Hasil Input:</h3>
+              <div id="currentTime"></div><br>
+              <div id="outputName"></div>
+              <div id="outputBirthdate"></div>
+              <div id="outputGender"></div>
+              <div id="outputMessage"></div>
+            </div>
+          </div>
+        </section>
     </main>
     
-    <form action="">
-        <label for="name">Nama :</label>
-        <input type="text" name="name" id="name">
-        <input type="submit" placeholder="Submit">
-    </form>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

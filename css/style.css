@@ -86,17 +86,6 @@ body {
     color: #fff;
   }
 }
-
-  .banner {
-    background-image: url('/assets/banner2.jpg'); /* Ganti dengan URL gambar banner Anda */
-    background-size: cover;
-    background-position: center;
-    color: #555;
-    text-align: center;
-    padding: 100px 0;
-    width: 100%;
-    height: 578px;
-  }
   
   .banner h1 {
     margin: 0;
@@ -105,23 +94,14 @@ body {
     color: #000;;
   }
   
-  /* .banner p {
-    font-size: 1.2em;
-    -webkit-text-stroke:1px #fff;
-    color: #000;
-  } */
-  
-  .content {
-    padding: 40px;
+  .banner img {
+    background-size: cover;
+    background-position: center;
+    color: #555;
     text-align: center;
-  }
-  
-  .content h2 {
-    font-size: 1.8em;
-  }
-  
-  .content p {
-    font-size: 1.1em;
+    /* padding: 10px 0; */
+    width: 100%;
+    height: 578px;
   }
 
 /* Responsif untuk layar dengan lebar maksimum 768px */
@@ -153,7 +133,7 @@ body {
   .facilitator-item img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Atur tinggi gambar maksimum di sini */
+    max-height: 200px; 
     object-fit: cover;
   }
   
@@ -213,7 +193,7 @@ body {
     margin-top: 0;
   }
 
-  
+
   .profile {
     padding: 40px;
     background-color: #f2f2f2;
